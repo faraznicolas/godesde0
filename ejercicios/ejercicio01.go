@@ -6,7 +6,10 @@ import (
 
 func Conversor(valor string) (int, string) {
 	var texto string
-	numero, _ := strconv.Atoi(valor)
+	numero, err := strconv.Atoi(valor)
+	if err != nil {
+		return 0, "Hubo un error"
+	}
 	if numero > 100 {
 		texto = "Es mayor a 100"
 	} else if numero < 100 {
