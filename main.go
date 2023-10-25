@@ -5,10 +5,17 @@ import (
 	"runtime"
 
 	"github.com/faraznicolas/godesde0/ejercicios"
+	"github.com/faraznicolas/godesde0/iteraciones"
+	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/variables"
 )
 
 func main() {
+	ejercicios.Ejercicio2()
+
+}
+
+func mainOld() {
 	numero, text := ejercicios.Conversor("as")
 	fmt.Println(numero)
 	fmt.Println(text)
@@ -31,4 +38,7 @@ func main() {
 	default:
 		fmt.Printf("%s", os)
 	}
+
+	iteraciones.Iterar()
+	teclado.IngresoNumeros()
 }
