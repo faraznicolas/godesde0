@@ -5,13 +5,14 @@ import (
 	"runtime"
 
 	"github.com/faraznicolas/godesde0/ejercicios"
+	"github.com/faraznicolas/godesde0/files"
 	"github.com/faraznicolas/godesde0/iteraciones"
 	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/variables"
 )
 
 func main() {
-	ejercicios.Ejercicio2()
+	files.LeoArchivo()
 
 }
 
