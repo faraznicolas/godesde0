@@ -13,10 +13,11 @@ import (
 )
 
 func main() {
-	funciones.LlamarClosure()
+	funciones.Exponencia(2)
 }
 
 func mainOld() {
+	funciones.LlamarClosure()
 	files.LeoArchivo()
 	numero, text := ejercicios.Conversor("as")
 	fmt.Println(numero)
