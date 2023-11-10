@@ -6,17 +6,18 @@ import (
 
 	"github.com/faraznicolas/godesde0/ejercicios"
 	"github.com/faraznicolas/godesde0/files"
+	"github.com/faraznicolas/godesde0/funciones"
 	"github.com/faraznicolas/godesde0/iteraciones"
 	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/variables"
 )
 
 func main() {
-	files.LeoArchivo()
-
+	funciones.LlamarClosure()
 }
 
 func mainOld() {
+	files.LeoArchivo()
 	numero, text := ejercicios.Conversor("as")
 	fmt.Println(numero)
 	fmt.Println(text)
