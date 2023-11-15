@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/faraznicolas/godesde0/arreglos_slices"
 	"github.com/faraznicolas/godesde0/ejercicios"
 	"github.com/faraznicolas/godesde0/files"
 	"github.com/faraznicolas/godesde0/funciones"
@@ -13,10 +14,13 @@ import (
 )
 
 func main() {
-	funciones.Exponencia(2)
+	//arreglos_slices.MuestroArreglo()
+	//arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 }
 
 func mainOld() {
+	funciones.Exponencia(2)
 	funciones.LlamarClosure()
 	files.LeoArchivo()
 	numero, text := ejercicios.Conversor("as")
