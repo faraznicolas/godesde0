@@ -5,20 +5,28 @@ import (
 	"runtime"
 
 	"github.com/faraznicolas/godesde0/arreglos_slices"
+	e "github.com/faraznicolas/godesde0/ejercicio_interfaces"
 	"github.com/faraznicolas/godesde0/ejercicios"
 	"github.com/faraznicolas/godesde0/files"
 	"github.com/faraznicolas/godesde0/funciones"
 	"github.com/faraznicolas/godesde0/iteraciones"
 	"github.com/faraznicolas/godesde0/mapas"
+	"github.com/faraznicolas/godesde0/modelos"
 	"github.com/faraznicolas/godesde0/teclado"
+	"github.com/faraznicolas/godesde0/users"
 	"github.com/faraznicolas/godesde0/variables"
 )
 
 func main() {
-	mapas.MostrarMapas()
+	Pedro := new(modelos.Hombre)
+	e.HumanoRespirando(Pedro)
+	Maria := new(modelos.Mujer)
+	e.HumanoRespirando(Maria)
 }
 
 func mainOld() {
+	users.AltaUsuario()
+	mapas.MostrarMapas()
 	//arreglos_slices.MuestroArreglo()
 	//arreglos_slices.MuestroSlice()
 	arreglos_slices.Capacidad()
