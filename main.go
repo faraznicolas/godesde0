@@ -9,17 +9,19 @@ import (
 	"github.com/faraznicolas/godesde0/files"
 	"github.com/faraznicolas/godesde0/funciones"
 	"github.com/faraznicolas/godesde0/iteraciones"
+	"github.com/faraznicolas/godesde0/mapas"
 	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/variables"
 )
 
 func main() {
-	//arreglos_slices.MuestroArreglo()
-	//arreglos_slices.MuestroSlice()
-	arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
 }
 
 func mainOld() {
+	//arreglos_slices.MuestroArreglo()
+	//arreglos_slices.MuestroSlice()
+	arreglos_slices.Capacidad()
 	funciones.Exponencia(2)
 	funciones.LlamarClosure()
 	files.LeoArchivo()
