@@ -13,6 +13,7 @@ import (
 	"github.com/faraznicolas/godesde0/gorutines"
 	"github.com/faraznicolas/godesde0/iteraciones"
 	"github.com/faraznicolas/godesde0/mapas"
+	"github.com/faraznicolas/godesde0/middlewares"
 	"github.com/faraznicolas/godesde0/modelos"
 	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/users"
@@ -21,9 +22,10 @@ import (
 )
 
 func main() {
-	webserver.MiWebServer()
+	middlewares.MiMiddleware()
 }
 func mainOld() {
+	webserver.MiWebServer()
 	canal1 := make(chan bool)
 	go gorutines.MiNombreLento("Nicolas", canal1)
 	defer func() { <-canal1 }()
