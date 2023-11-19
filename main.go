@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/faraznicolas/godesde0/arreglos_slices"
+	"github.com/faraznicolas/godesde0/defer_panic"
 	e "github.com/faraznicolas/godesde0/ejercicio_interfaces"
 	"github.com/faraznicolas/godesde0/ejercicios"
 	"github.com/faraznicolas/godesde0/files"
@@ -18,13 +19,15 @@ import (
 )
 
 func main() {
+	defer_panic.VemosError()
+	defer_panic.EjemploPanic()
+}
+
+func mainOld() {
 	Pedro := new(modelos.Hombre)
 	e.HumanoRespirando(Pedro)
 	Maria := new(modelos.Mujer)
 	e.HumanoRespirando(Maria)
-}
-
-func mainOld() {
 	users.AltaUsuario()
 	mapas.MostrarMapas()
 	//arreglos_slices.MuestroArreglo()
