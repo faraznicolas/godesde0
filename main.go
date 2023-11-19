@@ -24,7 +24,7 @@ import (
 func main() {
 	middlewares.MiMiddleware()
 }
-func mainOld() {
+func MainOld() {
 	webserver.MiWebServer()
 	canal1 := make(chan bool)
 	go gorutines.MiNombreLento("Nicolas", canal1)
