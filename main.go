@@ -10,20 +10,26 @@ import (
 	"github.com/faraznicolas/godesde0/ejercicios"
 	"github.com/faraznicolas/godesde0/files"
 	"github.com/faraznicolas/godesde0/funciones"
+	"github.com/faraznicolas/godesde0/gorutines"
 	"github.com/faraznicolas/godesde0/iteraciones"
 	"github.com/faraznicolas/godesde0/mapas"
 	"github.com/faraznicolas/godesde0/modelos"
 	"github.com/faraznicolas/godesde0/teclado"
 	"github.com/faraznicolas/godesde0/users"
 	"github.com/faraznicolas/godesde0/variables"
+	"github.com/faraznicolas/godesde0/webserver"
 )
 
 func main() {
+	webserver.MiWebServer()
+}
+func mainOld() {
+	canal1 := make(chan bool)
+	go gorutines.MiNombreLento("Nicolas", canal1)
+	defer func() { <-canal1 }()
+	fmt.Println("Estoy aqui")
 	defer_panic.VemosError()
 	defer_panic.EjemploPanic()
-}
-
-func mainOld() {
 	Pedro := new(modelos.Hombre)
 	e.HumanoRespirando(Pedro)
 	Maria := new(modelos.Mujer)
